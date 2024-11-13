@@ -5,7 +5,12 @@ class AppThemes {
   static final appTheme = ThemeData(
       primaryColor: AppColors.primaryColor,
       dividerColor: AppColors.secondaryColor,
+      brightness: Brightness.dark,
       dialogBackgroundColor: AppColors.buttonPrimaryColor,
+      appBarTheme: const AppBarTheme(
+        color: AppColors.secondaryColor,
+        foregroundColor: AppColors.textPrimaryColor,
+      ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: AppColors.secondaryColor,
